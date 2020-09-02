@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <script defer src="js/lib/fontawesome-all.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>CSS Scrolling &amp; Parallax</title>
-  </head>
 
-  <body>
-    <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-dark w-100 bg-primary">
-   <a href="#page-hero">LiL Monsters</a>
-    <a href="#meet">meet</a>
-    <a href="#types">types</a>
-    <a href="#friend">friend</a>
-    <a href="#hire">hire</a>
-    </nav>
- 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script defer src="js/lib/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>CSS Scrolling &amp; Parallax</title>
+</head>
 
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<body>
+  <nav class="site-nav text-uppercase navbar navbar-expand-md navbar-dark w-100 position-fixed">
+    <div class="container-fluid">
+      <a class="navbar-brand font-weight-normal" href="#page-hero">
+        <i class="fas fa-cube mr-2"></i>LiL Monsters</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+        aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="myTogglerNav">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#meet">meet</a>
+          <a class="nav-item nav-link" href="#types">types</a>
+          <a class="nav-item nav-link" href="#friend">friend</a>
+          <a class="nav-item nav-link" href="#hire">hire</a>
+        </div>
+      </section>
+
+    </div>
+  </nav>
+  <header id="page-hero" class="site-header bg-primary">
+    <section class="layout-hero d-flex flex-column text-light min-vh-100">
+      <div class="header-content d-flex flex-column flex-fill">
+        <div class="d-flex flex-column container justify-content-center align-items-center flex-fill text-center">
+          <h3 class="header-title display-2 font-weight-lighter">
+            LiL Monsters
+          </h3>
+          <p class="header-subtitle lead font-weight-lighter">
+            The LiL Monsters are a mighty crew of characters who are exuberant
+            about education.<br />The LiL Monsters are passionate about
+            sharing their love for learning, too!
+          </p>
+        </div>
+      </div>
+      <div class="header-cue bg-white text-center w-100 align-self-end">
+        <i class="header-cue-icon fas fa-chevron-down text-danger"></i>
+      </div>
+    </section>
+  </header>
+  <article id="meet" class="page-section text-center py-5">
+    <header class="container w-100"></header>
+  </article>
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
