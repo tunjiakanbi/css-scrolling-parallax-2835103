@@ -80,6 +80,8 @@ html {
 }
 
 .site-header .header-cue {
+    position: absolute;
+    bottom: 0;
     animation: clear 0.5s 1.5s forwards;
     transform: translateY(2rem);
     z-index: 10;
@@ -90,6 +92,12 @@ html {
     animation: slideDown 0.5s 1.8s forwards, pulse 2s 4s ease-in-out infinite;
     transform: translateY(-2rem);
     opacity: 1;
+}
+
+.appear {
+    animation: clear 1s 0.5s forwards;
+    opacity: 0;
+    transform: scale(0.9);
 }
 
 /* @keyframes slideUp {
